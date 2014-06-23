@@ -7,7 +7,7 @@ if (screen.width <= 1024) {
 document.write('<link rel="stylesheet" type="text/css" href="low.css">'); }
 
 else if (screen.width >= 1025) {
-document.write('<link rel="stylesheet" type="text/css" href="high.css">'); } 
+document.write('<link rel="stylesheet" type="text/css" href="high.css">'); }
 
  </script>
 <?
@@ -25,7 +25,7 @@ if (preg_match("/safari/i", "$string")){ ?>
 
 <script  type="text/JavaScript" src="replacement.js">
   </script>
-  
+
   <? } ?>
 </head>
 
@@ -63,7 +63,7 @@ Jonathan C.	 Primack, B.A. - LMT Lic.# 10789
 
   <div id='content'>
 
- 
+
 
 <div id='section' style='height:290px'>
 
@@ -86,7 +86,7 @@ My Name Is Jonathan C. Primack and I am a fully Licensed<br> Massage Therapist. 
 <p>I was born and raised in New York and moved to Portland, OR in the late 90's. I have been enjoying the benefits of receiving Therapeutic Massage for well over ten years. After a very prestigious career in the Hospitality Industry I was looking to make a significant change in my life and decided to follow my heart and find a better way to make a difference in this world we live in. Believe me when I tell you I made the right decision. I am a solid therapist trained here in Oregon in Deep Tissue, Swedish, Thai, and Trigger Point Massage. </p><br><br>
 
 
-<p>I have been in practice for over eight years and have also pursued a solid teaching career in the science and art of bodywork. You can't imagine the good fortune and fulfillment I have gotten through working with so many wonderful clients. I have a wide and varied client base. I regularly have Construction Workers, Housewives, Lawyers, Accountants, Computer Technicians, Secretaries, Students, Bartenders, and Medical Professionals all making their way into my office for some much needed Bodywork. It is often the case that I work directly with other health care professionals in matters of Injury or Accident rehabilitation in order to best help my clients get the best possible treatment in their healing process. </p> 
+<p>I have been in practice for over eight years and have also pursued a solid teaching career in the science and art of bodywork. You can't imagine the good fortune and fulfillment I have gotten through working with so many wonderful clients. I have a wide and varied client base. I regularly have Construction Workers, Housewives, Lawyers, Accountants, Computer Technicians, Secretaries, Students, Bartenders, and Medical Professionals all making their way into my office for some much needed Bodywork. It is often the case that I work directly with other health care professionals in matters of Injury or Accident rehabilitation in order to best help my clients get the best possible treatment in their healing process. </p>
 </div>
 
 <div id='section' style='height:340px;'>
@@ -120,9 +120,8 @@ My Name Is Jonathan C. Primack and I am a fully Licensed<br> Massage Therapist. 
 <br><br>
 <p>Rates
 
-<p>One Hour Session   ~~~~~~~~~ $65 <br>
-One and a Half Hour Session ~~~   $85 <br>
-Two Hour Session   ~~~~~~~~~   $110 </p>
+<p>One and a Half Hour Session ~~~   $100 <br>
+Two Hour Session   ~~~~~~~~~   $150 </p>
 
 <p> *** Please Note That Thai Massage Sessions Begin at the Two Hour Level </p>
 
