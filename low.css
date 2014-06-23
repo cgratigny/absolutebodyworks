@@ -1,0 +1,47 @@
+body {
+font-size:9pt;
+}
+
+body a {
+font-size:15px;
+}
+
+div#top h1 {
+font-size:35px;
+}
+
+div#top {
+font-size:10px;
+}
+
+div#menu {
+width:700px;
+}
+
+
+div#intro {
+width:670px;
+height:352px;
+top:115px;
+left:15px;
+}
+
+.h{
+font-size:15px;
+}
+
+
+div#content {
+width:650px;
+height:420px;
+}
+
+div#page {
+	width:700px;
+	background-image:url(low.jpg);
+	height:617px;
+	
+}
+	
+	
+	

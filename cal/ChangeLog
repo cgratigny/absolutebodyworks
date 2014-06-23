@@ -1,0 +1,594 @@
+2004-12-25	simoami
+	* config.inc.php 1.22:
+		full fs path added to install redirection
+
+	* install.php 1.10:
+		corrected the release version
+
+	* include/dblib.php 1.4:
+		commented db query print
+
+2004-12-24	simoami
+	* include/functions.inc.php 1.39:
+		made inactive categories to show when editing an existing event 
+		or when the user has the necessary privilege
+
+	* themes/default/theme.php 1.35:
+		set url display to avoid displaying empty urls as "http://"
+
+	* calendar.php 1.42:
+		fixed add_event function to insert start date correctly into 
+		database. It was using start_month and start_year which no 
+		longer hold any data
+
+	* lang/english.php 1.37:
+	* profile.php 1.1:
+	* themes/default/images/icon-recur-event-active.gif 1.1:
+	* themes/default/images/icon-recur-event-inactive.gif 1.1:
+	* themes/default/images/icon-user-profile.jpg 1.1:
+	* themes/default/style.css 1.15:
+	* themes/default/theme.php 1.34:
+		New Addition: profile.php and related changes in theme files and 
+		language support
+
+	* themes/default/theme.php 1.36:
+		removed extra tags <tr></tr>
+
+	* include/functions.inc.php 1.38:
+		replaced unknown redirect() function with theme_redirect_dialog()
+		
+
+2004-12-22	simoami
+	* admin_events.php 1.15:
+	* calendar.php 1.41:
+	* lang/english.php 1.36:
+		Added editing capabilities for recurrent events.
+
+2004-12-21	simoami
+	* themes/default/style.css 1.14:
+	* themes/default/theme.php 1.33:
+		Added link to week numbers displayer on the monthly view
+
+2004-12-19	simoami
+	* admin_events.php 1.14:
+	* include/functions.inc.php 1.37:
+	* lib/event.inc.php 1.6:
+	* themes/default/images/icon-event-inactive.gif 1.2:
+	* themes/default/images/icon-minus.gif 1.2:
+	* themes/default/images/icon-plus.gif 1.2:
+	* themes/default/theme.php 1.32:
+		Added support for new recurrence data, including: Number of 
+		occurrences $recEndCount
+
+2004-12-18	simoami
+	* lang/german.php 1.1:
+		German language file. A contribution by Antoine Johannes Kuske 
+		aka fesseChaud
+
+	* calendar.php 1.40:
+		Fixed previous week button to show for upcoming weeks, when "
+		Past Events" are disabled
+
+2004-11-24	simoami
+	* admin_settings.php 1.12:
+	* lang/english.php 1.34:
+	* lib/mail.inc.php 1.3:
+	* sql/basic.sql 1.11:
+	* upgrade.php 1.10:
+		Added mail method dynamic settings
+
+2004-11-23	simoami
+	* config.inc.php 1.21:
+		added calendar_status default value for old versions
+
+	* calendar.php 1.39:
+	* include/functions.inc.php 1.36:
+	* lang/english.php 1.33:
+	* themes/default/theme.php 1.31:
+		fixed recur until date support
+
+	* upgrade.php 1.9:
+		fixed compatibility issue with old versions
+
+	* cal_mini.inc.php 1.11:
+		changed config.inc.php to init.inc.php
+
+2004-11-18	simoami
+	* lib/xmlrpc.inc 1.2:
+		added function_exists check to avoid redeclaring some xmlrpc 
+		functions
+
+	* include/functions.inc.php 1.35:
+		Added Category filter in get_events function
+
+	* calendar.php 1.38:
+		Removed old implementation of monthly view
+
+2004-11-17	simoami
+	* calendar.php 1.36:
+		removed unused $count
+
+	* admin_events.php 1.13:
+	* calendar.php 1.37:
+	* include/functions.inc.php 1.34:
+	* lang/english.php 1.32:
+	* themes/default/theme.php 1.30:
+		Added reccurrence information processing code
+
+	* themes/default/theme.php 1.29:
+		added fix to monthly view to display events
+
+	* lang/english.php 1.31:
+		added $lang_general['signature']
+
+	* include/functions.inc.php 1.33:
+		$lang_general variable import
+
+	* themes/default/style.css 1.13:
+		added text-align to .eventstyle class
+
+	* install.php 1.9:
+	* sql/schema.sql 1.6:
+	* upgrade.php 1.7:
+	* upgrade.php 1.8:
+		Added 2 new fields to events table: 'recur_end_type' and '
+		recur_count'
+
+2004-11-15	simoami
+	* themes/default/images/icon-minus.gif 1.1:
+	* themes/default/images/icon-plus.gif 1.1:
+		expand/contract icons
+
+	* include/functions.inc.php 1.32:
+		added event form values for recurrence information
+
+	* themes/default/template.html 1.5:
+		added js functions for toggle category and cookie handling. 
+		Removed localized js var strings
+
+	* themes/default/theme.php 1.28:
+		added theme_monthly_view, inline_jscode to insert server 
+		variables in javascript. Updated event form template to include 
+		recurrence information
+
+	* calendar.php 1.35:
+		added theme support for monthly view
+
+	* themes/default/style.css 1.12:
+		added tablev1
+
+2004-10-21	simoami
+	* admin_events.php 1.12:
+		added category color display
+
+	* include/functions.inc.php 1.31:
+		added get_display_style() for javascript show/hide feature
+
+	* admin_settings.php 1.11:
+	* lang/english.php 1.29:
+	* sql/basic.sql 1.10:
+	* upgrade.php 1.4:
+		added cal_view_show_week
+
+	* upgrade.php 1.5:
+		added html_upgrade_failed()
+
+	* upgrade.php 1.6:
+		change form method to get
+
+2004-10-17	simoami
+	* calendar.php 1.33:
+	* themes/default/template.html 1.4:
+		fixed html validation errors
+
+	* themes/default/theme.php 1.27:
+		fixed html validation errors and replaced all remaining 
+		translate() functions with appropriate language variable
+
+	* lang/english.php 1.27:
+		added 'today', 'edit_event', 'delete_event' and 'delete_confirm'
+
+	* lang/english.php 1.28:
+		added event_notification entries and completely removed old 
+		translate() structure
+
+	* login.php 1.5:
+		fixed redirect page after login to index.php instead of 
+		directory path
+
+	* themes/default/theme.php 1.26:
+		Added $event_icons array, which holds monthly view event icons
+
+	* themes/default/style.css 1.11:
+		Added monthly view event style classes
+
+	* calendar.php 1.32:
+		Improved event display in monthly view. Added substring to crop 
+		long titles.
+
+	* include/functions.inc.php 1.30:
+		replaced all remaining translate() functions with appropriate 
+		language variable
+
+	* calendar.php 1.34:
+		removed remaining translate() calls and updated event 
+		notification email process
+
+	* include/functions.inc.php 1.29:
+		Added get_cat_name()
+
+2004-10-15	simoami
+	* themes/default/style.css 1.10:
+		added event style classes for monthly view
+
+	* upgrade.php 1.3:
+		added new version 2.0.25
+
+	* lib/mail.inc.php 1.2:
+		removed duplicate $Host variable
+
+	* login.php 1.4:
+	* themes/default/theme.php 1.25:
+		added new update notification window in the login screen. added 
+		width to theme_caption_dialog()
+
+	* sql/basic.sql 1.9:
+		added new db CONFIG entries
+
+	* lib/event.inc.php 1.5:
+		added get_style() and fixed recurrent events detection
+
+	* include/dblib.php 1.3:
+		fixed debug mode detection
+
+	* upgrade.php 1.2:
+		added html_calendar_unlocked and removed redirection process to 
+		replace it by a notification. Added permission check: only 
+		administrators can run the upgrade tool and the calendar has to 
+		be disabled
+
+	* lang/english.php 1.26:
+		added calendar_locked and new upgrade messages
+
+	* config.inc.php 1.20:
+		Added upgrade version check and admin notification
+
+	* calendar.php 1.31:
+		Added event style in monthly view
+
+	* init.inc.php 1.2:
+		added INIT_FILE_INCLUDED constant
+
+2004-10-14	simoami
+	* include/functions.inc.php 1.28:
+		added support for $lang_general['signature'] and changed events 
+		list query to consider the status of $CONFIG['multi_day_events'])
+		
+
+	* config.inc.php 1.19:
+		Changed upgrade routine
+
+	* admin_settings.php 1.10:
+		added form_multi_day_events() for multi-day display parameters 
+		and recurrent events status
+
+	* calendar.php 1.30:
+		added recurrent events support and changed get_events returned 
+		value
+
+	* lang/english.php 1.25:
+		added show_recurrent_events, multi_day_events and signature
+
+	* lib/event.inc.php 1.4:
+		added support for multi-day envent display mode
+
+	* cal_mini.inc.php 1.10:
+		replace op to mode
+		added a condition to display the calendar when it's called natively
+
+2004-10-09	simoami
+	* admin_groups.php 1.6:
+	* admin_users.php 1.6:
+	* cal_search.php 1.8:
+		op changed to mode
+
+	* themes/default/theme.php 1.24:
+		html fix
+
+	* lang/french.php 1.1:
+		French translation file
+
+	* include/functions.inc.php 1.27:
+		signature function changed
+
+	* lang/english.php 1.24:
+	* lang/french.php 1.3:
+		Added $lang_general['signature'] entry
+
+	* include/functions.inc.php 1.26:
+		Added $lang_general['signature'] support
+
+	* calendar.php 1.29:
+	* include/functions.inc.php 1.25:
+	* lib/event.inc.php 1.3:
+		Implemented reccurent events
+
+2004-12-21	simoami
+	* themes/default/style.css 1.14:
+	* themes/default/theme.php 1.33:
+		Added link to week numbers displayer on the monthly view
+
+2004-12-19	simoami
+	* admin_events.php 1.14:
+	* include/functions.inc.php 1.37:
+	* lib/event.inc.php 1.6:
+	* themes/default/images/icon-event-inactive.gif 1.2:
+	* themes/default/images/icon-minus.gif 1.2:
+	* themes/default/images/icon-plus.gif 1.2:
+	* themes/default/theme.php 1.32:
+		Added support for new recurrence data, including: Number of 
+		occurrences $recEndCount
+
+2004-12-18	simoami
+	* lang/german.php 1.1:
+		German language file. A contribution by Antoine Johannes Kuske 
+		aka fesseChaud
+
+	* calendar.php 1.40:
+		Fixed previous week button to show for upcoming weeks, when "
+		Past Events" are disabled
+
+2004-11-24	simoami
+	* admin_settings.php 1.12:
+	* lang/english.php 1.34:
+	* lib/mail.inc.php 1.3:
+	* sql/basic.sql 1.11:
+	* upgrade.php 1.10:
+		Added mail method dynamic settings
+
+2004-11-23	simoami
+	* config.inc.php 1.21:
+		added calendar_status default value for old versions
+
+	* calendar.php 1.39:
+	* include/functions.inc.php 1.36:
+	* lang/english.php 1.33:
+	* themes/default/theme.php 1.31:
+		fixed recur until date support
+
+	* upgrade.php 1.9:
+		fixed compatibility issue with old versions
+
+	* cal_mini.inc.php 1.11:
+		changed config.inc.php to init.inc.php
+
+2004-11-18	simoami
+	* lib/xmlrpc.inc 1.2:
+		added function_exists check to avoid redeclaring some xmlrpc 
+		functions
+
+	* include/functions.inc.php 1.35:
+		Added Category filter in get_events function
+
+	* calendar.php 1.38:
+		Removed old implementation of monthly view
+
+2004-11-17	simoami
+	* calendar.php 1.36:
+		removed unused $count
+
+	* admin_events.php 1.13:
+	* calendar.php 1.37:
+	* include/functions.inc.php 1.34:
+	* lang/english.php 1.32:
+	* themes/default/theme.php 1.30:
+		Added reccurrence information processing code
+
+	* themes/default/theme.php 1.29:
+		added fix to monthly view to display events
+
+	* lang/english.php 1.31:
+		added $lang_general['signature']
+
+	* include/functions.inc.php 1.33:
+		$lang_general variable import
+
+	* themes/default/style.css 1.13:
+		added text-align to .eventstyle class
+
+	* install.php 1.9:
+	* sql/schema.sql 1.6:
+	* upgrade.php 1.7:
+	* upgrade.php 1.8:
+		Added 2 new fields to events table: 'recur_end_type' and '
+		recur_count'
+
+2004-11-15	simoami
+	* themes/default/images/icon-minus.gif 1.1:
+	* themes/default/images/icon-plus.gif 1.1:
+		expand/contract icons
+
+	* include/functions.inc.php 1.32:
+		added event form values for recurrence information
+
+	* themes/default/template.html 1.5:
+		added js functions for toggle category and cookie handling. 
+		Removed localized js var strings
+
+	* themes/default/theme.php 1.28:
+		added theme_monthly_view, inline_jscode to insert server 
+		variables in javascript. Updated event form template to include 
+		recurrence information
+
+	* calendar.php 1.35:
+		added theme support for monthly view
+
+	* themes/default/style.css 1.12:
+		added tablev1
+
+2004-10-21	simoami
+	* admin_events.php 1.12:
+		added category color display
+
+	* include/functions.inc.php 1.31:
+		added get_display_style() for javascript show/hide feature
+
+	* admin_settings.php 1.11:
+	* lang/english.php 1.29:
+	* sql/basic.sql 1.10:
+	* upgrade.php 1.4:
+		added cal_view_show_week
+
+	* upgrade.php 1.5:
+		added html_upgrade_failed()
+
+	* upgrade.php 1.6:
+		change form method to get
+
+2004-10-17	simoami
+	* calendar.php 1.33:
+	* themes/default/template.html 1.4:
+		fixed html validation errors
+
+	* themes/default/theme.php 1.27:
+		fixed html validation errors and replaced all remaining 
+		translate() functions with appropriate language variable
+
+	* lang/english.php 1.27:
+		added 'today', 'edit_event', 'delete_event' and 'delete_confirm'
+
+	* lang/english.php 1.28:
+		added event_notification entries and completely removed old 
+		translate() structure
+
+	* login.php 1.5:
+		fixed redirect page after login to index.php instead of 
+		directory path
+
+	* themes/default/theme.php 1.26:
+		Added $event_icons array, which holds monthly view event icons
+
+	* themes/default/style.css 1.11:
+		Added monthly view event style classes
+
+	* calendar.php 1.32:
+		Improved event display in monthly view. Added substring to crop 
+		long titles.
+
+	* include/functions.inc.php 1.30:
+		replaced all remaining translate() functions with appropriate 
+		language variable
+
+	* calendar.php 1.34:
+		removed remaining translate() calls and updated event 
+		notification email process
+
+	* include/functions.inc.php 1.29:
+		Added get_cat_name()
+
+2004-10-15	simoami
+	* themes/default/style.css 1.10:
+		added event style classes for monthly view
+
+	* upgrade.php 1.3:
+		added new version 2.0.25
+
+	* lib/mail.inc.php 1.2:
+		removed duplicate $Host variable
+
+	* login.php 1.4:
+	* themes/default/theme.php 1.25:
+		added new update notification window in the login screen. added 
+		width to theme_caption_dialog()
+
+	* sql/basic.sql 1.9:
+		added new db CONFIG entries
+
+	* lib/event.inc.php 1.5:
+		added get_style() and fixed recurrent events detection
+
+	* include/dblib.php 1.3:
+		fixed debug mode detection
+
+	* upgrade.php 1.2:
+		added html_calendar_unlocked and removed redirection process to 
+		replace it by a notification. Added permission check: only 
+		administrators can run the upgrade tool and the calendar has to 
+		be disabled
+
+	* lang/english.php 1.26:
+		added calendar_locked and new upgrade messages
+
+	* config.inc.php 1.20:
+		Added upgrade version check and admin notification
+
+	* calendar.php 1.31:
+		Added event style in monthly view
+
+	* init.inc.php 1.2:
+		added INIT_FILE_INCLUDED constant
+
+2004-10-14	simoami
+	* include/functions.inc.php 1.28:
+		added support for $lang_general['signature'] and changed events 
+		list query to consider the status of $CONFIG['multi_day_events'])
+		
+
+	* config.inc.php 1.19:
+		Changed upgrade routine
+
+	* admin_settings.php 1.10:
+		added form_multi_day_events() for multi-day display parameters 
+		and recurrent events status
+
+	* calendar.php 1.30:
+		added recurrent events support and changed get_events returned 
+		value
+
+	* lang/english.php 1.25:
+		added show_recurrent_events, multi_day_events and signature
+
+	* lib/event.inc.php 1.4:
+		added support for multi-day envent display mode
+
+	* cal_mini.inc.php 1.10:
+		replace op to mode
+		added a condition to display the calendar when it's called natively
+
+2004-10-09	simoami
+	* admin_groups.php 1.6:
+	* admin_users.php 1.6:
+	* cal_search.php 1.8:
+		op changed to mode
+
+	* themes/default/theme.php 1.24:
+		html fix
+
+	* lang/french.php 1.1:
+		French translation file
+
+	* include/functions.inc.php 1.27:
+		signature function changed
+
+	* lang/english.php 1.24:
+	* lang/french.php 1.3:
+		Added $lang_general['signature'] entry
+
+	* include/functions.inc.php 1.26:
+		Added $lang_general['signature'] support
+
+	* calendar.php 1.29:
+	* include/functions.inc.php 1.25:
+	* lib/event.inc.php 1.3:
+		Implemented reccurent events
+
+2004-10-05	simoami
+	* calendar.php 1.28:
+	* include/functions.inc.php 1.24:
+	* lib/event.inc.php 1.2:
+		Started Recurrent events implementation
+
+2004-10-04	simoami
+	* calendar.php 1.27:
+		fixed categories view to support the status of show_past_events 
+		when calculating total and upcoming events
